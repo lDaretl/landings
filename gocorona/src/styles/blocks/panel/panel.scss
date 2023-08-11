@@ -1,0 +1,31 @@
+.panel {
+  background-color: #fff;
+  box-shadow: 0 2px 24px 0 rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &-number {
+    color: $pink;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.04px;
+  }
+
+  &-text {
+    color: $black;
+    text-align: center;
+    font-family: Rubik;
+    font-size: .6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.07px;
+    text-transform: uppercase;
+  }
+}

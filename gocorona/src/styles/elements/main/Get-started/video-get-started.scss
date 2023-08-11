@@ -1,0 +1,54 @@
+.video-get-started {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 0 0 18px;
+
+  &__link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    &:hover{
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  &__icon {
+    margin: 0 12px 0 0;
+  }
+
+  &__body {
+
+  }
+
+  &__title {
+    color: #B0B0B0;
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126%; /* 16.38px */
+    letter-spacing: 1.04px;
+
+    &:not(:last-child) {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__text {
+    color: $black;
+    font-family: Rubik;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126%; /* 11.34px */
+    letter-spacing: 1.485px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $bpMobL) {
+    justify-content: center;
+  }
+}

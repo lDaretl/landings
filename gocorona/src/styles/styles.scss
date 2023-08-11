@@ -1,0 +1,47 @@
+@import 'modern-normalize';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  font-family: Rubik;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1;
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+  color: $grey;
+
+  &:active {
+    color: $grey;
+  }
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: $bpPCS) {
+    max-width: 970px;
+  }
+}

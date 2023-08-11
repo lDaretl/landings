@@ -1,0 +1,58 @@
+.healthcare {
+  &__container {
+    padding: 100px 30px 50px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $bpTab) {
+      padding: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 60px 0;
+
+    @media (max-width: $bpTab) {
+      margin: 0 30px 0;
+    }
+  }
+
+  &__block-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 670px;
+    text-align: center;
+
+    & > .block-content__text {
+      margin: 0;
+    }
+
+    @media (max-width: $bpTab) {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $bpMobL) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card-symptom {
+    @media (max-width: 882px) {
+      padding: 45px 17px 35px;
+    }
+
+    @media (max-width: $bpMobL) {
+      padding: 45px 17px 50px;
+    }
+  }
+}

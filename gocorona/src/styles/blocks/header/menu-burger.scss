@@ -1,0 +1,59 @@
+.menu__icon {
+  display: none;
+
+  @media (max-width: $bpMobL) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 60px;
+    height: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform .7s ease 0s;
+
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    &::before,
+    & span,
+    &::after {
+      width: 100%;
+      height: 2px;
+      background-color: $grey;
+      transition: transform .7s ease 0s, box-shadow .7s ease 0s,
+                  background-color .7s ease 0s;
+    }
+  }
+}
+
+//animations
+.menu__icon._active {
+  transform: rotateZ(-450deg);
+}
+
+@mixin burgerActiveShadow {
+  box-shadow: 0 0 5px $grey;
+}
+
+@mixin burgerActiveBgColor {
+  background-color: $white;
+}
+
+.menu__icon._active::before {
+  transform: translate(0, 400%) rotateZ(-45deg);
+  @include burgerActiveShadow;
+  @include burgerActiveBgColor;
+}
+
+.menu__icon._active span {
+  transform: scale(0) rotateZ(720deg);
+}
+
+.menu__icon._active::after {
+  transform: translate(0, -400%) rotateZ(45deg);
+  @include burgerActiveShadow;
+  @include burgerActiveBgColor;
+}

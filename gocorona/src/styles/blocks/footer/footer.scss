@@ -1,0 +1,32 @@
+.footer {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px;
+  }
+
+  &__stores {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $bpMobS) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__store {
+    & > img {
+      height: 55px;
+    }
+
+    &:not(:last-child) {
+      @media (max-width: $bpMobS) {
+        margin: 0 0 15px;
+      }
+    }
+  }
+}
+
