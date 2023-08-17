@@ -1,0 +1,179 @@
+include blocks/button
+include blocks/blockTitle
+
+doctype html
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Relvise
+        link(href=require('./styles/index.scss') rel='stylesheet')
+    body
+        .wrapper
+            include components/header/header
+            
+            main.main
+                .solution
+                    .solution__container
+                        .solution__content
+                            +blockTitle({
+                                    title: 'Finance and Consultancy Solution',
+                                    text: 'We know how large objects will act, but things on a small scale.',
+                                    titleClass: 'solution__title',
+                                    textClass: 'solution__text',
+                                    h1: true
+                                })
+                            .solution__buttons
+                                +button({
+                                    title: 'Get Quote Now',
+                                    link: '#',
+                                    rounded: true
+                                })
+                                +button({
+                                    title: 'Learn More',
+                                    link: '#',
+                                    rounded: true,
+                                    green: true,
+                                    outlined: true
+                                })
+                    .solution__img
+                        .background
+                            img(src=require("Images/background/bg.jpg") alt="Background image with office workers")
+
+                .features
+                    .features__container
+                        .features__cards
+                            include blocks/featureCard
+                            - const featureCardsData = require('./components/main/feature-cards.json')
+                            each cardData in featureCardsData.data
+                                +featureCard(cardData)
+
+                .expirience
+                    .expirience__container
+                        .expirience__block-title.block-title
+                            +blockTitle({
+                                    title: 'Designing Better Experience',
+                                    text: 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
+                                    titleClass: 'expirience__title',
+                                    textClass: 'expirience__text',
+                                })
+                        .expirience__statistic-cards.statistic-cards
+                            include blocks/statisticCard
+                            - const statisticCardsData = require('./components/main/statistic-cards.json')
+                            each cardData in statisticCardsData.data
+                                +statisticCard(cardData)
+
+                .practice
+                    .practice__container
+                        .practice__block-title.block-title
+                                +blockTitle({
+                                    title: 'Practice Advice',
+                                    text: 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics ',
+                                    titleClass: 'practice__title',
+                                    textClass: 'practice__text',
+                                })
+                        .practice__advantage-cards.advantage-cards
+                            include blocks/advantageCard
+                            - const advantageCardsData =  require('./components/main/advantage-cards.json')
+                            each cardData in advantageCardsData.data
+                                +advantageCard(cardData)
+
+                .who-we-are
+                    .who-we-are__container
+                        .who-we-are__block-title.block-title
+                            +blockTitle({
+                                    title: 'Who We Are',
+                                    text: 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
+                                    titleClass: 'who-we-are__title',
+                                    textClass: 'who-we-are__text',
+                                })
+
+                .trusted
+                    .trusted__container
+                        .trusted__video
+                            video(src="#" poster=require("Images/trusted/vid-placeholder.jpg"))
+                        .trusted__block-title.block-title
+                                +blockTitle({
+                                    title: 'Most trusted in our field',
+                                    text: 'Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.',
+                                    titleClass: 'trusted__title',
+                                    textClass: 'trusted__text',
+                                })
+                                .trusted__card
+                                    img.trusted__img(src=require("Images/trusted/users.svg") alt="Users icon")
+                                    .trusted__text-block
+                                        .trusted__title the quick fox jumps over the lazy dog
+                                        .trusted__text.block-title__text Things on a very small scale ...
+                                .trusted__card
+                                    img.trusted__img(src=require("Images/trusted/gauge.svg") alt="Gauge icon")
+                                    .trusted__text-block
+                                        .trusted__title the quick fox jumps over the lazy dog
+                                        .trusted__text.block-title__text Things on a very small scale ...
+
+                include blocks/companiesLogos
+                - const companiesLogos = require('./components/main/companies-logos.json')
+                - const companiesLogosData = companiesLogos.data
+                +companiesLogos(companiesLogosData)
+
+                .subscribe
+                    .subscribe__background-top
+                        .subscribe__container
+                            .subscribe__content
+                                .subscribe__label Subscribe For Latest Newsletter
+                                form.subscribe__form.block-form(action="#" method="post")    
+                                    input.block-form__input(type="email" name="subscriber" id="subscriber" placeholder="Your Email")
+                                    button.block-form__button(type="submit") Subscribe
+                    .subscribe__background-bottom
+
+                .get-in-touch
+                    .get-in-touch__container
+                        .get-in-touch__text
+                            +blockTitle({
+                                    title: 'Get In Touch',
+                                    text: 'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics',
+                                    titleClass: 'get-in-touch__title',
+                                    textClass: 'get-in-touch__text',
+                                })
+
+                        .get-in-touch__cards
+                            include blocks/contactCard
+                            +contactCard({
+                                img: {
+                                    src: "Images/get-in-touch/phone.svg",
+                                    alt: "Phone icon"
+                                },
+                                email: "georgia.young@example.com",
+                                title: "Get Support",
+                                btn: "Submit Request",
+                                link: "#"
+                            })
+
+                            +contactCard({
+                                style: "dark",
+                                img: {
+                                    src: "Images/get-in-touch/map-pin.svg",
+                                    alt: "Map pin icon"
+                                },
+                                email: "georgia.young@example.com",
+                                title: "Get Support",
+                                btn: "Submit Request",
+                                link: "#"
+                            })
+
+                            +contactCard({
+                                img: {
+                                    src: "Images/get-in-touch/arrow.svg",
+                                    alt: "Arrow icon"
+                                },
+                                email: "georgia.young@example.com",
+                                title: "Get Support",
+                                btn: "Submit Request",
+                                link: "#"
+                            })
+
+                .whitespace
+
+            include components/footer/footer
+
+    script(src=require("./app/main.js"))

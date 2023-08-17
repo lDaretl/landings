@@ -1,0 +1,26 @@
+.block-title {
+    text-align: center;
+
+    & > :not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+
+    &__title {
+        color: $grey-dark;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+    }
+    &__text {
+        color: $grey-light;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+}

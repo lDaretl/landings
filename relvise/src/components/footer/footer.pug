@@ -1,0 +1,41 @@
+footer.footer
+    .footer__main.footer-main
+        .footer-main__container
+            ul.footer-main__box
+                include ../../blocks/blockColumn
+                - const footerMainData = require("./footerMainColumns.json")
+                each obj in footerMainData.columnsData
+                    +blockColumn(obj)
+                .footer-main__column.block-column
+                    h6.block-column__title Get In Touch
+                    ul.block-column__list.column-list
+                        li.column-list__item
+                            a.column-list__link(href="tel:+4805550103")
+                                img.column-list__img(src=require("Images/footer/main/phone.svg") alt="Phone number")
+                                span.column-list__text (480) 555-0103
+                        li.column-list__item
+                            a.column-list__link(href="https://goo.gl/maps/BbmyD4Ve1H6NnKHJ6")
+                                img.column-list__img(src=require("Images/footer/main/map-pin.svg") alt="Address")
+                                span.column-list__text 4517 Washington Ave.
+                        li.column-list__item
+                            a.column-list__link(href="mailto:debra.holt@example.com")
+                                img.column-list__img(src=require("Images/footer/main/arrow.svg") alt="E-mail")
+                                span.column-list__text debra.holt@example.com
+
+    .footer__bottom.footer-bottom
+        .footer-bottom__container
+            .footer-bottom__box
+                .footer-bottom__text Made With Love By Figmaland All Right Reserved 
+                ul.footer-bottom__socials
+                    li.footer-bottom__item
+                        a.footer-bottom__link(href="#")
+                            img.footer-bottom__facebook(src=require("Images/footer/bottom/fb.svg") alt="Facebook logo")
+                    li.footer-bottom__item
+                        a.footer-bottom__link(href="#")
+                            img.footer-bottom__facebook(src=require("Images/footer/bottom/inst.svg") alt="Instagram logo")
+                    li.footer-bottom__item
+                        a.footer-bottom__link(href="#")
+                            img.footer-bottom__facebook(src=require("Images/footer/bottom/tw.svg") alt="Twitter logo")
+                    li.footer-bottom__item
+                        a.footer-bottom__link(href="#")
+                            img.footer-bottom__facebook(src=require("Images/footer/bottom/yt.svg") alt="Youtube logo")

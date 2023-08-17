@@ -1,0 +1,43 @@
+{
+    "columnsData": [
+        {
+            "title": "Company Info",
+            "textArr": [
+                "About Us",
+                "Carrier",
+                "We are hiring",
+                "Blog"
+            ]
+        },
+
+        {
+            "title": "Legal",
+            "textArr": [
+                "About Us",
+                "Carrier",
+                "We are hiring",
+                "Blog"
+            ]
+        },
+
+        {
+            "title": "Features",
+            "textArr": [
+                "Business Marketing",
+                "User Analytic",
+                "Live Chat",
+                "Unlimited Support"
+            ]
+        },
+
+        {
+            "title": "Resources",
+            "textArr": [
+                "IOS & Android",
+                "Watch a Demo",
+                "Customers",
+                "API"
+            ]
+        }
+    ]
+}

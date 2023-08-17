@@ -1,0 +1,44 @@
+.statistic-card {
+    width: 230px;
+    height: 210px;
+    display: flex;
+    background-color: $white;
+
+    & > :not(:last-child) {
+        margin: 0 40px 0 0;
+    }
+
+    &__content {
+        height: calc(210px - 60px);
+        margin: auto;
+        text-align: center;
+
+        & > :not(:last-child) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__img {
+        height: 48px;
+    }
+
+    &__title {
+        color: $grey-dark;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+    }
+
+    &__text {
+        color: $grey-light;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+}

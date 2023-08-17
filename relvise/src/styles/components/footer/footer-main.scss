@@ -1,0 +1,36 @@
+.footer-main {
+    display: flex;
+    background-color: $dark-blue;
+    color: $white;
+    padding: 35px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $bpCont) {
+            padding: 0 40px;
+            justify-content: center;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0 120px 0 0;
+        
+        @media (max-width: 1076px) {
+            padding: 0;
+        }
+
+        @media (max-width: $bpTab) {
+            justify-content: center;
+        }
+    }
+
+    & img {
+        height: 16px;
+        margin: 0 10px 0 0;
+    }
+}

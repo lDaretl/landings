@@ -1,0 +1,7 @@
+mixin statisticCard(cardData)
+    .statistic-card
+        .statistic-card__content
+            - const imgAttr = {"src": require(cardData.img.src), "alt": cardData.img.alt}
+            img.statistic-card__img&attributes(imgAttr)
+            h4.statistic-card__title= cardData.title
+            p.statistic-card__text= cardData.text

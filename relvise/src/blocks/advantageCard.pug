@@ -1,0 +1,7 @@
+mixin advantageCard(cardData)
+    .advantage-card
+        .advantage-card__content
+            h5.advantage-card__title= cardData.title
+            p.advantage-card__text= cardData.text
+        - const imgAttr = {"src": require(cardData.img.src), "alt": cardData.img.alt}
+        img.advantage-card__img&attributes(imgAttr)

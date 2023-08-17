@@ -1,0 +1,72 @@
+.subscribe {
+    &__background-top {
+        height: 65px;
+        width: 100%;
+        background-color: $white-bg;
+
+        @media (max-width: $bpTab) {
+            justify-content: center;
+            height: 115px;
+        }
+
+        @media (max-width: $bpMobL) {
+            height: 175px;
+        }
+    }
+
+    &__container {
+        padding: 0 32px;
+        min-height: 125px;
+        position: relative;
+
+        @media (max-width: $bpMobS) {
+            padding: 0 15px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        min-height: 125px;
+        background-color: $dark-blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 50px;
+
+        @media (max-width: $bpTab) {
+            justify-content: center;
+            padding: 30px 90px;
+        }
+
+        @media (max-width: $bpMobL) {
+            padding: 30px;
+        }
+    }
+
+    &__label {
+        color: $white;
+        width: 270px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+    }
+
+    &__background-bottom {
+        height: 80px;
+        width: 100%;
+        background-color: $grey-dark;
+
+        @media (max-width: $bpTab) {
+            justify-content: center;
+            height: 145px;
+        }
+
+        @media (max-width: $bpMobL) {
+            height: 185px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.navigation {
+    &__menu {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__item {
+        transition: scale .4s ease-out;
+
+        &:hover {
+            scale: 1.3;
+        }
+    }
+
+    &__link {
+        color: $grey-light;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    &__button {
+        display: none;
+    }
+}
+
+@import './navigation-mobile.scss';

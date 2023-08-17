@@ -1,0 +1,46 @@
+.block-form {
+    @media (max-width: $bpMobL) {
+        text-align: center;
+    }
+
+    &__input {
+        width: 333px;
+        height: 56px;
+        border: 1px solid #E6E6E6;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 15px 20px;
+
+        @media (max-width: $bpMobL) {
+            border-radius: 5px;
+            margin: 0 0 40px 0;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        width: 117px;
+        height: 56px;
+        background-color: $orange;
+        color: $white;
+        margin-left: -1px;
+        border: 1px solid #E6E6E6;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+
+        @media (max-width: $bpMobL) {
+            border-radius: 5px;
+        }
+
+        &:hover {
+            box-shadow: 0 2px 3px .5px $grey-dark;
+            scale: 1.01;
+        }
+    
+        &:active {
+            box-shadow: 0 0 0 $grey-dark, inset 0 2px 3px .5px $grey-dark;;
+            scale: .99;
+        }
+    }
+}

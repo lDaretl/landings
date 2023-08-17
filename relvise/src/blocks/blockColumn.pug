@@ -1,0 +1,10 @@
+mixin listItem(text)
+    li.column-list__item
+        a.column-list__link(href="#")= text
+
+mixin blockColumn(blockData)
+    li.footer-main__column.block-column
+        h6.block-column__title= blockData.title
+        ul.block-column__list.column-list
+            each itemText in blockData.textArr
+                +listItem(itemText)    

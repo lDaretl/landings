@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "color": "",
+            "img": {
+                "src": "Images/feature-cards/feature-tool-box.svg",
+                "alt": "Toolbox icon"
+            },
+            "title": "Environmental Consulting",
+            "text": "We focus on ergonomics and meeting you where you work"
+        },
+
+        {
+            "color": "",
+            "img": {
+                "src": "Images/feature-cards/feature-shop.svg",
+                "alt": "Shop icon"
+            },
+            "title": "Finance and consultancy",
+            "text": "Just type what's on your mind and we'll get you there"
+        },
+        
+        {
+            "color": "green",
+            "img": {
+                "src": "Images/feature-cards/feature-notebook.svg",
+                "alt": "Notebook icon"
+            },
+            "title": "Financial Services Consulting",
+            "text": "The quick fox jumps over the lazy dog"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+mixin logoItem(img)
+    -
+        const imgAttr = {
+            src: require(img.src), 
+            alt: img.alt, 
+        }
+    img.logos__box-item&attributes(imgAttr)
+
+mixin companiesLogos(logos)
+    .companies-logos
+        .companies-logos__container
+            .companies-logos__box.logos__box
+                each item in logos
+                    +logoItem(item)

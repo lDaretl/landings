@@ -1,0 +1,38 @@
+.advantage-card {
+    width: 230px;
+    height: 340px;
+    background-color: $white;
+
+    &__content {
+        padding: 30px;
+        height: 200px;
+
+        & > :not(:last-child) {
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__title {
+        color: $grey-dark;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+
+    &__text {
+        color: $grey-light;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    &__img {
+        height: 138px;
+    }
+}

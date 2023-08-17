@@ -1,0 +1,7 @@
+mixin featureCard(cardData)
+    .feature-card(class= cardData.color ? 'feature-card--' + cardData.color : '')
+        .feature-card__content
+            - const imgAttr = {"src": require(cardData.img.src), "alt": cardData.img.alt}
+            img.feature-card__img&attributes(imgAttr)
+            h4.feature-card__title= cardData.title
+            p.feature-card__text= cardData.text

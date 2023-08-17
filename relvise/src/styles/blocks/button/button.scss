@@ -1,0 +1,98 @@
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    $color: $orange;
+    color: $white;
+    background-color: $color;
+    transition: all 0.2s ease;
+
+    padding: 15px 40px;
+    &.button--outlined {
+        @extend .button;
+        color: $color;
+        border: 1px solid $color;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.button--rounded {
+        @extend .button;
+        border-radius: 37px;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 2px 3px 0.5px $grey-dark;
+            scale: 1.01;
+        }
+
+        &:active {
+            box-shadow:
+                0 0 0 $grey-dark,
+                inset 0 2px 3px 0.5px $grey-dark;
+            scale: 0.99;
+        }
+    }
+
+    @media (any-pointer: coarse) {
+        &:focus {
+            animation: click 0.27s ease;
+        }
+
+        &:active {
+            animation: click 1s ease;
+        }
+
+        @keyframes click {
+            from {
+            }
+
+            50% {
+                box-shadow:
+                    0 0 0 $grey-dark,
+                    inset 0 2px 10px 0.5px $grey-dark;
+                scale: 0.95;
+            }
+
+            to {
+                box-shadow: none;
+                scale: 1;
+            }
+        }
+    }
+}
+
+.button--green {
+    $color: $green;
+    color: $white;
+    background-color: $color;
+
+    &.button--outlined {
+        @extend .button--green;
+        color: $color;
+        border: 1px solid $color;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.button--rounded {
+        @extend .button--green;
+        border-radius: 37px;
+    }
+}
+
+.button--white {
+    $color: $white;
+    color: $color;
+    background-color: $color;
+
+    &.button--outlined {
+        @extend .button--white;
+        border: 1px solid $color;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.button--rounded {
+        @extend .button--white;
+        border-radius: 37px;
+    }
+}

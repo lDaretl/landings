@@ -1,0 +1,31 @@
+.get-in-touch {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 80px 15px 150px;
+
+        @media (max-width: $bpMobL) {
+            padding: 40px 15px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1012px) {
+            .contact-card--dark {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 684px) {
+            .contact-card--dark {
+                order: 0;
+            }
+        }
+    }
+}

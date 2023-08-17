@@ -1,0 +1,49 @@
+.contact-card {
+    display: flex;
+    width: 328px;
+    height: 333px;
+    background-color: $white;
+    color: $grey-dark;
+
+    &__box {
+        width: 248px;
+        height: 233px;
+        margin: auto;
+        text-align: center;
+
+        & > :not(:last-child) {
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__img {
+        height: 72px;
+    }
+
+    &__email {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+
+    &__btn {
+    }
+
+    &.contact-card--dark {
+        height: 393px;
+        color: $white;
+        background-color: $grey-dark;
+    }
+}

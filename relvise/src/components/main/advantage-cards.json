@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "title": "A single source of truth",
+            "text": "Newton thought that light was made up of particles, but then it was discovered",
+            "img": {
+                "src": "Images/advantage-cards/workers.jpg",
+                "alt": "Office worker"
+            }
+        },
+
+        {
+            "title": "Fastest way to organize",
+            "text": "Quantum mechanics is the description of the behaviour of matter",
+            "img": {
+                "src": "Images/advantage-cards/city.jpg",
+                "alt": "City view"
+            }
+        },
+
+        {
+            "title": "Fastest way to take action",
+            "text": "They describe a universe consisting of bodies moving",
+            "img": {
+                "src": "Images/advantage-cards/workers.jpg",
+                "alt": "Office workers"
+            }
+        },
+        
+        {
+            "title": "Work better together",
+            "text": "They finally obtained a consistent description of the behaviour",
+            "img": {
+                "src": "Images/advantage-cards/window.jpg",
+                "alt": "Office workers on the background of the city"
+            }
+        }
+    ]
+}

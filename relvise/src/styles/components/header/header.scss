@@ -1,0 +1,50 @@
+@import "./navigation.scss";
+
+.header {
+    height: 100px;
+    padding: 38px 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 4;
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $bpCont) {
+            padding: 0 40px;
+        }
+
+        @media (max-width: $bpMobL) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: $bpMobS) {
+            padding: 0 15px;
+        }
+    }
+
+    &__logo {
+        width: 220px;
+
+        @media (max-width: $bpMobL) {
+            width: 105px;
+        }
+    }
+
+    &__logo-text {
+        display: flex;
+        width: 90px;
+        color: $grey-dark;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+
+        transition: scale 0.4s ease-out;
+
+        &:hover {
+            scale: 1.3;
+        }
+    }
+}

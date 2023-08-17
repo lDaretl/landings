@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "img": {
+                "src": "Images/statistic-cards/statistic-cards-users.svg",
+                "alt": "Users icon"
+            },
+            "title": "972 +",
+            "text": "Consumer Products"
+        },
+
+        {
+            "img": {
+                "src": "Images/statistic-cards/statistic-cards-figure.svg",
+                "alt": "Figure icon"
+            },
+            "title": "181 +",
+            "text": "Financial Services"
+        },
+
+        {
+            "img": {
+                "src": "Images/statistic-cards/statistic-cards-medal.svg",
+                "alt": "Medal icon"
+            },
+            "title": "98%",
+            "text": "Environmental"
+        },
+        
+        {
+            "img": {
+                "src": "Images/statistic-cards/statistic-cards-toolbox.svg",
+                "alt": "Toolbox icon"
+            },
+            "title": "746 +",
+            "text": "Business & Finance"
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+.trusted {
+    background-color: $white;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+        justify-content: space-between;
+        padding: 100px 15px 135px;
+
+        @media (max-width: $bpTab) {
+            justify-content: center;
+        }
+
+        @media (max-width: $bpMobL) {
+            padding: 0 15px 40px;
+        }
+    }
+
+    &__video {
+        max-width: 597px;
+
+        & > video {
+            width: 100%;
+        }
+    }
+
+    &__block-title {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 0 0 0;
+        max-width: 333px;
+    }
+
+    &__title {
+        text-align: start;
+
+        @media (max-width: $bpTab) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        text-align: start;
+
+        @media (max-width: $bpTab) {
+            text-align: center;
+        }
+    }
+
+    &__card {
+        display: flex;
+        gap: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: -20px;
+        }
+    }
+
+    &__img {
+        width: 32px;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .trusted__title {
+            line-height: 24px;
+            letter-spacing: 0.1px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.practice {
+    &__container {
+        padding: 105px 15px 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        @media (max-width: $bpMobL) {
+            padding: 40px 15px;
+        }
+    }
+
+    &__block-title {
+        max-width: 450px;
+        align-self: center;
+    }
+
+    &__advantage-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 38px;
+    }
+}

@@ -1,0 +1,14 @@
+mixin button(buttonData)
+    -
+        const classes = [
+            buttonData.rounded ? "button--rounded" : "",
+            buttonData.green ? "button--green" : "",
+            buttonData.white ? "button--white" : "",
+            buttonData.outlined ? "button--outlined" : ""
+        ]
+        
+        const btnAttr = {
+            class: classes,
+            href: `${buttonData.link}`,
+        }
+    a.button&attributes(btnAttr)= buttonData.title

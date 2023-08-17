@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "src": "Images/companies-logos/hooli.svg", 
+            "alt": "Hooli logo" 
+        },
+
+        {
+            "src": "Images/companies-logos/lyft.svg", 
+            "alt": "Lyft logo" 
+        },
+
+        {
+            "src": "Images/companies-logos/hat.svg", 
+            "alt": "Hat logo" 
+        },
+
+        {
+            "src": "Images/companies-logos/stripe.svg", 
+            "alt": "Stripe logo" 
+        },
+
+        {
+            "src": "Images/companies-logos/aws.svg", 
+            "alt": "AWS logo" 
+        },
+
+        {
+            "src": "Images/companies-logos/reddit.svg", 
+            "alt": "Reddit logo" 
+        }
+    ]
+}

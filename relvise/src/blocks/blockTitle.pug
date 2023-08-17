@@ -1,0 +1,7 @@
+mixin blockTitle(blockData)
+    .block-title
+        if blockData.h1
+            h1.block-title__title(class=`${blockData.titleClass}`)= blockData.title
+        else
+            h2.block-title__title(class=`${blockData.titleClass}`)= blockData.title
+        p.block-title__text(class=`${blockData.textClass}`)= blockData.text

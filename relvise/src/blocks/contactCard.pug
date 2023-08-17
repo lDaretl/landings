@@ -1,0 +1,16 @@
+mixin contactCard(cardData)
+    -
+        let cardStyle =  ""
+        let btnStyle = ""
+
+        if (cardData.style === "dark") {
+            cardStyle =  "contact-card--dark"
+            btnStyle = "button--white"
+        }
+
+    .contact-card(class=cardStyle)
+        .contact-card__box
+            img.contact-card__img(src=require(cardData.img.src) alt=cardData.img.alt)
+            p.contact-card__email= cardData.email
+            h6.contact-card__title=  cardData.title
+            a.contact-card__btn.button.button--outlined(class=btnStyle href=cardData.link)= cardData.btn

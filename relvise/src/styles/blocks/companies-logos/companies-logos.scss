@@ -1,0 +1,21 @@
+.companies-logos {
+
+    &__container {
+        padding: 50px 15px 70px;
+
+        @media (max-width: $bpMobL) {
+            padding: 40px 15px;
+        }
+    }
+}
+
+.logos__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+
+    &__item {
+        height: 74px;
+    }
+}

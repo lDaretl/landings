@@ -1,0 +1,12 @@
+.whitespace {
+    height: 140px;
+    background-color: $white;
+
+    @media (max-width: $bpMobL) {
+        height: 80px;
+    }
+
+    @media (max-width: $bpMobS) {
+        height: 40px;
+    }
+}
